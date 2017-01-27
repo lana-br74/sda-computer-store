@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Monitor()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Memory\n
+comment1.params=size\ cost
+comment1.target=Monitor(double,\ double)
+comment10.params=
+comment10.target=double\ getCost()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=model\ manufacturer\ size\ cost
+comment2.target=Monitor(java.lang.String,\ java.lang.String,\ double,\ double)
+comment3.params=model
+comment3.target=void\ setModel(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getModel()
+comment5.params=model
+comment5.target=void\ setManufacturer(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getManufacturer()
+comment7.params=size
+comment7.target=void\ setSize(double)
+comment8.params=
+comment8.target=double\ getSize()
+comment9.params=cost
+comment9.target=void\ setCost(double)
+numComments=12
