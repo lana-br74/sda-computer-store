@@ -1,26 +1,26 @@
 
 /**
- * Write a description of class HardDisk here.
+ * A description of class HardDisk here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lana Barikhan) 
+ * @version (2017-01-25)
  */
 public class HardDisk
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private String model;
     private String manufacturer;
-    private double capacity; //megaBytes
+    private double capacity; //GigaBytes
     private double cost;
    // private double volume;//cm^3
    // private double weight;//gram
    // private double transferSpeed;
    // private double averageAccessTime;
-   //private double aveageLifeSpan; //hours 
+   // private double aveageLifeSpan; //hours 
    // private String type; // external or internal
    // private String vendor;
-   //private String version;
-   //private String serialNumber;
+   // private String version;
+   // private String serialNumber;
    // private String busInfo;
 
     /**
@@ -29,10 +29,10 @@ public class HardDisk
     public HardDisk()
     {
         // initialise instance variables
-        this.model = "unknown";
-        this.manufacturer = "unknown";
-        this.capacity = 100;
-        this.cost = 0;
+        this.model = "P300";
+        this.manufacturer = "Seagate";
+        this.capacity = 500;
+        this.cost = 200;
        
     }
     
@@ -63,7 +63,7 @@ public class HardDisk
     }
     
     public String getModel(){
-    return this.model;
+       return this.model;
     }
     
      public void setManufacturer(String model){
@@ -71,7 +71,7 @@ public class HardDisk
     }
     
     public String getManufacturer(){
-    return this.manufacturer;
+        return this.manufacturer;
     }
     
     
@@ -92,18 +92,18 @@ public class HardDisk
     }
 
     /**
-     * A method  to return the cost of the haard disk
+     * A method  to return the cost of the hard disk
      * 
      * @param  y   a sample parameter for a method
      * @return  double the cost of the hard disk
      */
     
      public String toString(){
-        String specification = "Hard disk:"+
-        this.model+
-        "  "+ this.manufacturer+"  "+
-        "capacity :"+
-        this.capacity;
+        String specification = "Hard disk:" +
+                                this.model +
+                                "  " + this.manufacturer +
+                                "  " + "capacity :" +
+                                this.capacity + " Gb";
         
         return specification;
     }

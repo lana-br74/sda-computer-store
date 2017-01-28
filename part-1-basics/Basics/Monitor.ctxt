@@ -1,13 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Monitor()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Memory\n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Memory\r\n
 comment1.params=size\ cost
 comment1.target=Monitor(double,\ double)
 comment10.params=
 comment10.target=double\ getCost()
 comment11.params=
 comment11.target=java.lang.String\ toString()
+comment11.text=\r\n\ A\ method\ \ to\ return\ the\ cost\ of\ the\ monitor\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ double\ the\ cost\ of\ the\ monitor\r\n
 comment2.params=model\ manufacturer\ size\ cost
 comment2.target=Monitor(java.lang.String,\ java.lang.String,\ double,\ double)
 comment3.params=model

@@ -1,30 +1,30 @@
 
 /**
- * Write a description of class Processor here.
+ * A description of class Processor .
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lana Barikhan) 
+ * @version (2017-01-25)
  */
 public class Processor
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private String manufacturer;
     private String model;
-    private int clockSpeed; //GHZ
-    private String cache;
+    private double clockSpeed; //GHZ
+    private String cache;//MB
   //  private String internalMemory;
    // private String busSpeed;
-    private double cost;
+    private double cost;//$
 
     /**
      * Constructor for objects of class Processor
      */
     public Processor(){
-        this.manufacturer = "unknown";
-        this.model = "unknown";
-        this.clockSpeed = 0;
-        this.cost = 0.0;
-        this.cache = "unknown";
+        this.manufacturer = "AMD";
+        this.model = "A8-7670K";
+        this.clockSpeed = 3.6;
+        this.cost = 100;
+        this.cache = "4";
     }
     
     public Processor( String manufacturer,String model)
@@ -32,12 +32,12 @@ public class Processor
         // initialise instance variables
         this.manufacturer = manufacturer;
         this.model = model;
-        this.clockSpeed = 0;
-        this.cost = 0.0;
+        this.clockSpeed = 2;
+        this.cost = 100;
         this.cache = "unknown";
         
     }
-    public Processor( String manufacturer, String model , int speed, double cost)
+    public Processor( String manufacturer, String model , double speed, double cost)
     {
         // initialise instance variables
         this.manufacturer = manufacturer;
@@ -48,7 +48,7 @@ public class Processor
         
     }
     
-    public Processor( String manufacturer, String model , int speed, double cost,  String cache)
+    public Processor( String manufacturer, String model , double speed, double cost,  String cache)
     {
         // initialise instance variables
         this.manufacturer = manufacturer;
@@ -76,11 +76,11 @@ public class Processor
      return this.manufacturer;
     }
     
-    public void setClockSpeed(int clocdSpeed){
+    public void setClockSpeed(double clocdSpeed){
         this.clockSpeed = clockSpeed;
     }
     
-    public int getClockSpeed(){
+    public double getClockSpeed(){
         return this.clockSpeed;
     }
     
@@ -100,21 +100,20 @@ public class Processor
         return this.cache;
     }
     
-    public String toString(){
-        
-        String specification = "processor : "+this.manufacturer +
-         "  "+ this.model+ 
-         " clock speed : "+ this.clockSpeed +
-         " cache :"+ this.cache;
-         
-         return specification;
-    }
-
      /**
      * A method  to return the cost of the processor
      * 
      * @param  y   a sample parameter for a method
      * @return  double the cost of the processor
      */
-   
+    public String toString(){
+        
+        String specification = "processor : "+this.manufacturer +
+                               "  "+ this.model+ 
+                               " clock speed : "+ this.clockSpeed +"HZ "+
+                               " cache :"+ this.cache +" Mb";
+         
+         return specification;
+    }
+
 }

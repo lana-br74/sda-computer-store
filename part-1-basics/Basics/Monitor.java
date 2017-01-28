@@ -1,17 +1,17 @@
 
 /**
- * Write a description of class Memory here.
+ * A description of class Memory .
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Lana Barikhan) 
+ * @version (2017-01-25)
  */
 public class Monitor
 {
     // instance variables 
     private String model;
     private String manufacturer;
-    private double size; // GigaByte
-    private double cost;
+    private double size; //inch
+    private double cost;//$
 
     /**
      * Constructor for objects of class Memory
@@ -19,10 +19,10 @@ public class Monitor
     public Monitor()
     {
         // initialise instance variables
-        this.model = "unknown";
-        this.manufacturer = "unknown";
-        this.size = 100;
-        this.cost = 0;
+        this.model = "PA328Q";
+        this.manufacturer = "Asus";
+        this.size = 24;
+        this.cost = 100;
         
     }
     
@@ -79,23 +79,25 @@ public class Monitor
         return this.cost;
     }
     
+     /**
+     * A method  to return the cost of the monitor
+     * 
+     * @param  y   a sample parameter for a method
+     * @return  double the cost of the monitor
+     */
+    
+    
     public String toString(){
         String specification = "Monitor :"+
-        this.model+
-        "  "+ this.manufacturer+"  "+   
-        "size :"+
-        this.size;
+                                this.model+
+                                "  "+ this.manufacturer+"  "+   
+                                "size :"+
+                                this.size+" inch";
         
         return specification;
     }
 
-    /**
-     * A method  to return the cost of the memory
-     * 
-     * @param  y   a sample parameter for a method
-     * @return  double the cost of the memory
-     */
-    
+   
     
     /**
      * 

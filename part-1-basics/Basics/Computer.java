@@ -7,7 +7,7 @@
  */
 public class Computer
 {
-    // 
+   private String serialNumber; 
    private Processor theProcessor;
    private HardDisk theHardDisk;
    private Monitor theDisplay;
@@ -18,12 +18,63 @@ public class Computer
      */
     public Computer()
     {
-        //
-        
+        serialNumber = "123ABC";
         theProcessor = new Processor();
         theHardDisk = new HardDisk();
         theDisplay = new Monitor();
         
+    }
+    
+    public Computer(String serialNumber,String ProcessorManufacturer, String processorModel , double processorSpeed, double ProcessorCost
+                    ,double hardDiskCapacity, double hardDiskCost,double monitorSize, double monitorCost)
+    {
+        this.serialNumber = serialNumber;
+        this.theProcessor = new Processor(ProcessorManufacturer,processorModel ,processorSpeed,ProcessorCost);
+        this.theHardDisk = new HardDisk(hardDiskCapacity,hardDiskCost);
+        this.theDisplay = new Monitor(monitorSize,monitorCost);
+        
+    }
+    
+    public Computer(String serialNumber,String ProcessorManufacturer, String processorModel , double processorSpeed, double ProcessorCost
+                    ,String hardDiskmodel, String hardDiskmanufacturer ,double hardDiskCapacity, double hardDiskCost,
+                    String monitorModel, String monitorManufacturer,double monitorSize, double monitorCost)
+    {
+        this.serialNumber = serialNumber;
+        this.theProcessor = new Processor(ProcessorManufacturer,processorModel ,processorSpeed,ProcessorCost);
+        this.theHardDisk = new HardDisk(hardDiskmodel,hardDiskmanufacturer, hardDiskCapacity,hardDiskCost);
+        this.theDisplay = new Monitor(monitorModel,monitorManufacturer ,monitorSize,monitorCost);
+        
+    }
+    
+    public void setSerialNumber(String serialNumber){
+        this.serialNumber = serialNumber;
+    }
+    
+    public String getSerialNumber(){
+        return this.serialNumber;
+    }
+    
+    public void setProcessor(Processor processor){
+        this.theProcessor = processor;
+    }
+    
+    public Processor getProcessor(){
+        return this.theProcessor;
+    }
+    public void setHardDisk(HardDisk hardDisk){
+        this.theHardDisk = hardDisk;
+    }
+    
+    public HardDisk getHardDisk(){
+        return this.theHardDisk;
+    }
+    
+    public void setMonitor(Monitor monitor){
+        this.theDisplay = monitor;
+    }
+    
+    public Monitor getMonitor(){
+        return this.theDisplay;
     }
     
     public double getTotalCost(){
@@ -39,13 +90,14 @@ public class Computer
     public void printComputerSummmary()
     {
         // put your code here
-        String specification = this.theProcessor.toString() +"\n"+
-                               this.theHardDisk.toString() +"\n"+
-                               this.theDisplay.toString();
+        String specification = "SerialNumber :" + this.serialNumber +"\n"+
+                               "Procssor :" + this.theProcessor.toString() +"\n"+
+                               "Hard Disk :" + this.theHardDisk.toString() +"\n"+
+                               "Monitor :" + this.theDisplay.toString();
         
         System.out.println(specification);
         //print the total cost
-        System.out.println("total cost :"+ this.getTotalCost());
+        System.out.println("total cost :"+ this.getTotalCost()+" $");
        
     }
 }
