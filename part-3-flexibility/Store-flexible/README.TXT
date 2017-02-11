@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
+PROJECT TITLE: part3-Flexibility
+PURPOSE OF PROJECT: Simple project to model a computer store with more flexibility. This part extends part 2.
+VERSION or DATE: v1.0
 HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+AUTHORS: Lana Barikhan
+USER INSTRUCTIONS: The project was developed using Bluej framework.
