@@ -1,6 +1,6 @@
 
 /**
- * A description of class Memory .
+ * A class Memory represent a memory for Computers.Use getDiscreption() method to get its specification.
  * 
  * @author (Lana Barikhan) 
  * @version (2017-01-25)
@@ -14,118 +14,120 @@ public class Monitor
     private double cost;//$
 
     /**
-     * Constructor for objects of class Memory
+     * Constructor for objects of class Monitor
+     * that takes no parameters
      */
     public Monitor()
     {
         // initialise instance variables
-        this.model = "PA328Q";
-        this.manufacturer = "Asus";
-        this.size = 24;
-        this.cost = 100;
-        
+        this.model = "unknown";
+        this.manufacturer = "unknown";
+        this.size = 0;
+        this.cost = 0;
+
     }
-    
-     public Monitor(double size, double cost)
+
+    /**
+     * Constructor for objects of class Monitor
+     * that takes parameters
+     */
+    public Monitor(double size, double cost)
     {
         // initialise instance variables
         this.model = "unknown";
         this.manufacturer = "unknown";
         this.size = size;
         this.cost = cost;
-        
+
     }
-    
-     public Monitor(String model, String manufacturer, double size, double cost)
+
+    /**
+     * Constructor for objects of class Monitor
+     * that takes parameters
+     */
+    public Monitor(String model, String manufacturer, double size, double cost)
     {
         // initialise instance variables
         this.model = model;
         this.manufacturer = manufacturer;
         this.size = size;
         this.cost = cost;
-        
+
     }
-    
+
+    /** set the model
+     * @param model The model.
+     */
     public void setModel(String model){
         this.model = model;
     }
-    
+
+    /** get the model
+     * @return The model.
+     */
     public String getModel(){
-    return this.model;
+        return this.model;
     }
-    
-     public void setManufacturer(String model){
+
+    /**
+     * set the manufacturer
+     * @param manufacturer The manufacturer.
+     */
+    public void setManufacturer(String model){
         this.manufacturer = manufacturer;
     }
-    
+
+    /**
+     * retutrn the manufacturer
+     * @return  The manufacturer.
+     */
     public String getManufacturer(){
-    return this.manufacturer;
+        return this.manufacturer;
     }
-    
-    
+
+    /**
+     * set the size
+     * @param size The size
+     */
     public void setSize(double size){
         this.size = size;
     }
-    
+
+    /**
+     * return the size
+     * @return The size.
+     */
     public double getSize(){
         return this.size;
     }
-    
+
+    /**
+     * set the cost
+     * @param cost The cost
+     */
     public void setCost(double cost){
         this.cost = cost;
     }
-     
+
+    /**
+     * A method  to return the cost of the monitor
+     * @return  The cost of the monitor
+     */
     public double getCost(){
         return this.cost;
     }
-    
-     /**
-     * A method  to return the cost of the monitor
-     * 
-     * @param  y   a sample parameter for a method
-     * @return  double the cost of the monitor
+
+    /**
+     * A method  to return  a description for specificattions of the monitor
+     * @return  A description for the specificattions of the monitor
      */
-    
-    
-    public String toString(){
-        String specification = "Monitor :"+
-                                this.model+
-                                "  "+ this.manufacturer+"  "+   
-                                "size :"+
-                                this.size+" inch";
-        
+    public String getDescription(){
+        String specification = "Monitor   :" +
+            " model : "+ this.model+
+            " manufacturer : " + this.manufacturer+"  "+   
+            " size : "+ this.size +" inch";
+        System.out.println(specification);
         return specification;
     }
 
-   
-    
-    /**
-     * 
-     * 
-     * 
-     * 
-ntel Core i7-5820K
-
-Six cores pack with power
-
-Processor Cores: 6 | Thermal Design Power: 140W | Graphics Controller: None | Clock Speed: 3.3GHz | Processor Socket: LGA 2011-v3 | L2 Cache: 6 x 256KB
-
-
-AMD Athlon x4-860K
-
-Ideal for upgrading an existing AMD rig
-
-Processor Cores: 4 | Thermal Design Power: 95W | Graphics Controller: None | Clock Speed: 3.7GHz | Processor Socket: FM2+ | L2 Cache: 4MB
-
-
-AMD A8-7670K
-
-Ideal for laptop users
-
-Processor Cores: 4 | Thermal Design Power: 95W | Graphics Controller: Radeon R7 Series | Clock Speed: 3.6GHz | Processor Socket: FM2+ | L2 Cache: 4MB
-
-
-*/
-     
-   
 }
